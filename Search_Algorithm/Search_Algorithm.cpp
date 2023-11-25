@@ -87,3 +87,21 @@ public:
         } while (ch == 'y' || ch == 'Y');
     }
 };
+
+int main() {
+    SearchAlgorithm myList;
+    int menuChoice;
+    char ch;
+
+    std::cout << "Menu Option\n";
+    std::cout << "================\n";
+    std::cout << "1. Linear Search\n";
+    std::cout << "2. Binary Search\n";
+    std::cout << "3. Exit\n";
+    std::cout << "Enter your choice (1, 2, 3): ";
+    std::cin >> menuChoice;
+
+    switch (menuChoice) {
+        
+    return 0;
+}
