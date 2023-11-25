@@ -102,6 +102,28 @@ int main() {
     std::cin >> menuChoice;
 
     switch (menuChoice) {
-        
+
+    case 1:
+        std::cout << "\n-------------\n";
+        std::cout << "Linear search\n";
+        std::cout << "-------------\n";
+        myList.input();
+        myList.linearSearch();
+        break;
+    case 2:
+        std::cout << "\n-------------\n";
+        std::cout << "Binary search\n";
+        std::cout << "-------------\n";
+        myList.input();
+        myList.binarySearch();
+        break;
+    case 3:
+        std::cout << "Exit.\n";
+        break;
+    default:
+        std::cout << "Error.\n";
+        break;
+    }
+
     return 0;
 }
