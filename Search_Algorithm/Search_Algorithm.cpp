@@ -59,4 +59,31 @@ public:
 
         } while (ch == 'y' || ch == 'Y');
     }
+
+    void linearSearch() {
+        char ch;
+        int ctr;
+        do {
+            std::cout << "\nEnter the element you want to search: ";
+            int item;
+            std::cin >> item;
+
+            ctr = 0;
+            for (i = 0; i < n; i++) {
+                ctr++;
+                if (arr[i] == item) {
+                    std::cout << "\n" << item << " found at position " << (i + 1);
+                    break;
+                }
+            }
+
+            if (i == n)
+                std::cout << "\n" << item << " not found in the array";
+
+            std::cout << "\nNumber of comparisons: " << ctr;
+            std::cout << "\nContinue search (y/n): ";
+            std::cin >> ch;
+
+        } while (ch == 'y' || ch == 'Y');
+    }
 };
